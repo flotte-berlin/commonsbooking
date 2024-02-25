@@ -1333,55 +1333,55 @@ msgstr "Bitte kontaktiere die Kontaktpersonen vor Ort direkt, wenn du Fragen zur
 msgid "Not set"
 msgstr "Nicht gesetzt"
 
-#: src/Model/Timeframe.php:219
+#: src/Model/Timeframe.php:235
 msgid "Available here"
 msgstr "Hier verfügbar"
 
 #. translators: %s = date in WordPress defined format
-#: src/Model/Timeframe.php:224
+#: src/Model/Timeframe.php:240
 msgid "on %s"
 msgstr "am %s"
 
 #. translators: %s = date in WordPress defined format
-#: src/Model/Timeframe.php:229
+#: src/Model/Timeframe.php:245
 msgid "from %s"
 msgstr "von %s"
 
-#: src/Model/Timeframe.php:233
+#: src/Model/Timeframe.php:249
 msgid "permanently"
 msgstr "dauerhaft"
 
 #. translators: %1$s = startdate, second %2$s = enddate in WordPress defined format
-#: src/Model/Timeframe.php:239
+#: src/Model/Timeframe.php:255
 msgid "from %1$s until %2$s"
 msgstr "von %1$s bis %2$s"
 
 #. translators: %s = enddate in WordPress defined format
-#: src/Model/Timeframe.php:246
+#: src/Model/Timeframe.php:262
 msgid "until %s"
 msgstr "bis %s"
 
-#: src/Model/Timeframe.php:522
+#: src/Model/Timeframe.php:538
 msgid "Could not get item or location. Please set a valid item and location. Timeframe is saved as draft"
 msgstr "Artikel oder Standort fehlt. Bitte lege einen Artikel und Standort fest. Der Zeitrahmen wird als Entwurf gespeichert"
 
-#: src/Model/Timeframe.php:529
+#: src/Model/Timeframe.php:545
 msgid "Item or location is missing. Please set item and location. Timeframe is saved as draft"
 msgstr "Artikel oder Standort fehlt. Bitte lege einen Artikel und Standort fest. Der Zeitrahmen wird als Entwurf gespeichert"
 
-#: src/Model/Timeframe.php:557
+#: src/Model/Timeframe.php:573
 msgid "Startdate is missing. Timeframe is saved as draft. Please enter a start date to publish this timeframe."
 msgstr "Startdatum fehlt. Zeitrahmen wird als Entwurf gespeichert. Gib ein Startdatum ein, um diesen Zeitrahmen zu veröffentlichen."
 
-#: src/Model/Timeframe.php:570
+#: src/Model/Timeframe.php:586
 msgid "A pickup time but no return time has been set. Please set the return time."
 msgstr "Eine Abholzeit, aber keine Rückgabezeit wurde festgelegt. Lege bitte eine Rückgabezeit fest."
 
-#: src/Model/Timeframe.php:578
+#: src/Model/Timeframe.php:594
 msgid "End date is before start date. Please set a valid end date."
 msgstr "Enddatum liegt vor dem Startdatum. Bitte setze ein gültiges Enddatum."
 
-#: src/Model/Timeframe.php:611
+#: src/Model/Timeframe.php:627
 msgid "Item is already bookable at another location within the same date range. See other timeframe ID: %1$s: %2$s"
 msgstr "Artikel ist bereits an einem anderen Ort innerhalb desselben Datumsbereichs buchbar. Siehe andere Zeitrahmen ID: %1$s: %2$s"
 
@@ -1415,36 +1415,36 @@ msgstr "Es konnten keine Buchungscodes erstellt werden, da der Standort nicht ge
 msgid "No booking codes could be created because the item of the timeframe could not be found."
 msgstr "Es konnten keine Buchungscodes erstellt werden, da der Artikel nicht gefunden wurde."
 
-#: src/Service/Cache.php:278
+#: src/Service/Cache.php:286
 msgid "Connection status:"
 msgstr "Aktueller Verbindungsstatus:"
 
-#: src/Service/Cache.php:285
+#: src/Service/Cache.php:293
 msgid "Successfully connected to REDIS database!"
 msgstr "Erfolgreich mit REDIS-Datenbank verbunden!"
 
-#: src/Service/Cache.php:296
+#: src/Service/Cache.php:304
 msgid "REDIS database not enabled"
 msgstr "REDIS-Datenbank nicht aktiviert"
 
-#: src/Service/Cache.php:322
+#: src/Service/Cache.php:330
 msgid "Directory %s is writeable."
 msgstr "Der Ordner %s ist beschreibbar."
 
-#: src/Service/Cache.php:327
+#: src/Service/Cache.php:335
 msgid "Directory %s could not be written to."
 msgstr "Der Ordner %s ist nicht beschreibbar."
 
 #: src/View/Admin/Filter.php:58
 #: src/Wordpress/CustomPostType/Booking.php:839
-#: src/Wordpress/CustomPostType/Restriction.php:448
+#: src/Wordpress/CustomPostType/Restriction.php:446
 #: src/Wordpress/CustomPostType/Timeframe.php:689
 msgid "Start date"
 msgstr "Startdatum"
 
 #: src/View/Admin/Filter.php:62
 #: src/Wordpress/CustomPostType/Booking.php:856
-#: src/Wordpress/CustomPostType/Restriction.php:458
+#: src/Wordpress/CustomPostType/Restriction.php:456
 #: src/Wordpress/CustomPostType/Timeframe.php:713
 msgid "End date"
 msgstr "Enddatum"
@@ -1475,7 +1475,7 @@ msgstr "Nutzende*r"
 
 #: src/View/Booking.php:167
 #: src/Wordpress/CustomPostType/Booking.php:1009
-#: src/Wordpress/CustomPostType/Restriction.php:474
+#: src/Wordpress/CustomPostType/Restriction.php:472
 msgid "Status"
 msgstr "Status"
 
@@ -1497,7 +1497,7 @@ msgstr "Liste der Buchungscodes"
 #: src/Wordpress/CustomPostType/Booking.php:1025
 #: src/Wordpress/CustomPostType/Item.php:115
 #: src/Wordpress/CustomPostType/Restriction.php:54
-#: src/Wordpress/CustomPostType/Restriction.php:435
+#: src/Wordpress/CustomPostType/Restriction.php:434
 #: src/Wordpress/CustomPostType/Timeframe.php:101
 #: templates/shortcode-bookings.php:72
 msgid "Item"
@@ -2153,49 +2153,45 @@ msgstr "Allgemeine Standortinformationen"
 msgid "Location email"
 msgstr "Standort E-Mail"
 
-#: src/Wordpress/CustomPostType/Location.php:328
-msgid "Email addresses to which a copy of the booking confirmation / cancellation should be sent. You can enter multiple addresses separated by commas."
-msgstr "E-Mail-Adressen, an die eine Kopie der Buchungsbestätigung / Stornierung gesendet werden soll. Es können mehrere Adressen durch Komma getrennt eingeben werden."
-
-#: src/Wordpress/CustomPostType/Location.php:341
+#: src/Wordpress/CustomPostType/Location.php:350
 #: templates/booking-single.php:86
 #: templates/location-single-meta.php:53
 msgid "Pickup instructions"
 msgstr "Abhol-Hinweise"
 
-#: src/Wordpress/CustomPostType/Location.php:342
+#: src/Wordpress/CustomPostType/Location.php:351
 msgid "Type in information about the pickup process (e.g. detailed route description, opening hours, etc.). This will be shown to user in booking process and booking confirmation mail"
 msgstr "Gib hier Informationen über den Abholvorgang ein (z.B. detaillierte Routenbeschreibung, Öffnungszeiten usw.). Dies wird dem Benutzenden im Buchungsprozess und in der Buchungsbestätigungs-Email angezeigt"
 
-#: src/Wordpress/CustomPostType/Location.php:352
+#: src/Wordpress/CustomPostType/Location.php:361
 msgid "Location contact information"
 msgstr "Standortkontaktinformationen"
 
-#: src/Wordpress/CustomPostType/Location.php:353
+#: src/Wordpress/CustomPostType/Location.php:362
 msgid "information about how to contact the location (e.g. contact person, phone number, e-mail etc.). This will be shown to user in booking process and booking confirmation mail"
 msgstr "Informationen zur Kontaktaufnahme mit dem Standort (z. B. Ansprechpartner, Telefonnummer, E-Mail usw.). Dies wird dem Nutzenden im Buchungsprozess und bei der Buchungsbestätigungs-Email angezeigt"
 
-#: src/Wordpress/CustomPostType/Location.php:369
+#: src/Wordpress/CustomPostType/Location.php:378
 msgid "Location Admin(s)"
 msgstr "Standort-Administrator(en)"
 
-#: src/Wordpress/CustomPostType/Location.php:370
+#: src/Wordpress/CustomPostType/Location.php:379
 msgid "choose one or more users to give them the permisssion to edit and manage this specific location. Only users with the role CommonsBooking Manager can be selected here."
 msgstr "Wähle einen oder mehrere Benutzer aus, um ihnen die Möglichkeit zu geben, diesen bestimmten Standort zu bearbeiten und zu verwalten. Hier können nur Benutzer mit der Rolle CommonsBooking Manager ausgewählt werden."
 
-#: src/Wordpress/CustomPostType/Location.php:376
+#: src/Wordpress/CustomPostType/Location.php:385
 msgid "Select location admins."
 msgstr "Wähle Standort-Admins."
 
-#: src/Wordpress/CustomPostType/Location.php:430
+#: src/Wordpress/CustomPostType/Location.php:439
 msgid "Allow locked day overbooking"
 msgstr "Überbuchen von geblockten Tagen erlauben"
 
-#: src/Wordpress/CustomPostType/Location.php:431
+#: src/Wordpress/CustomPostType/Location.php:440
 msgid "If selected, all not selected days in any bookable timeframe that is connected to this location can be overbooked. Read the documentation <a target=\"_blank\" href=\"https://commonsbooking.org/?p=435\">Create Locations</a> for more information."
 msgstr "Wenn ausgewählt, können nicht aktivierte Tagen bei der Buchung überbucht werden. Dies gilt für alle Zeitrahmen vom Typ „buchbar“, die mit diesem Standort verknüpft sind. Lies die Dokumentation unter <a href=\"https://commonsbooking.org/?p=435\">Standorte anlegen</a> für mehr Informationen."
 
-#: src/Wordpress/CustomPostType/Location.php:400
+#: src/Wordpress/CustomPostType/Location.php:409
 msgid "Location Meta-Data"
 msgstr "Standort-Metadaten"
 
@@ -2354,30 +2350,28 @@ msgstr ""
 "Wähle den Typ der Einschränkung aus.<br>Wähle <strong>Hinweis</strong>, wenn der Artikel weiterhin verwendet werden kann und wenn z.B. nur ein Teil fehlt oder defekt ist.<br>Wähle <strong>Totalausfall,</strong> wenn der Fehler bedeutet, dass der Artikel nicht mehr verwendet werden kann. Wenn du Totalausfall auswählst, \n"
 "\t\t\twerden alle betroffenen Buchungen nach Aktivierung dieser Einschränkung und nach Anklicken des Senden-Buttons der Informations-E-Mail automatisch storniert "
 
-#: src/Wordpress/CustomPostType/Restriction.php:431
-#: src/Wordpress/CustomPostType/Restriction.php:438
 #: src/Wordpress/CustomPostType/Timeframe.php:811
 #: templates/shortcode-bookings.php:54
 msgid "All"
 msgstr "Alle"
 
-#: src/Wordpress/CustomPostType/Restriction.php:442
+#: src/Wordpress/CustomPostType/Restriction.php:440
 msgid "Hint"
 msgstr "Erläuterung"
 
-#: src/Wordpress/CustomPostType/Restriction.php:444
+#: src/Wordpress/CustomPostType/Restriction.php:442
 msgid "Please enter here a short information about the reason and possible effects of the usage restriction. <br>The explanation will be displayed on the article page and in the notification e-mail."
 msgstr "Bitte gib hier eine kurze Information über den Grund und mögliche Auswirkungen der Nutzungsbeschränkung ein. <br>Die Erklärung wird auf der Artikelseite und in der Benachrichtigungs-E-Mail angezeigt."
 
-#: src/Wordpress/CustomPostType/Restriction.php:449
+#: src/Wordpress/CustomPostType/Restriction.php:447
 msgid "Set the start date and time"
 msgstr "Startdatums und der Startzeit festlegen"
 
-#: src/Wordpress/CustomPostType/Restriction.php:459
+#: src/Wordpress/CustomPostType/Restriction.php:457
 msgid "Set the estimated end date and time"
 msgstr "Das geschätzte Enddatum und die geschätzten Endzeit festlegen"
 
-#: src/Wordpress/CustomPostType/Restriction.php:476
+#: src/Wordpress/CustomPostType/Restriction.php:474
 msgid ""
 "Choose status of this restriction. <br>\n"
 "\t\t\t\tSet to <strong>None</strong> if you want to deactivate the restriction.<br>\n"
@@ -2389,31 +2383,31 @@ msgstr ""
 "Wähle den Status dieser Einschränkung aus. <br>Wähle <strong>Keine</strong> wenn du die Einschränkung deaktivieren möchtest.<br>Wähle <strong>Aktiv</strong>, wenn die Einschränkung aktiv ist. <br>Wähle <strong>Problem gelöst</strong>, wenn die Einschränkung nicht mehr besteht.<br>Je nach ausgewähltem Status erhalten betroffene Nutzende entsprechende Benachrichtigungs-E-Mails.\n"
 "Wähle den gewünschten Status aus und klicke dann auf die Schaltfläche \"Senden\", um die E-Mail zu senden.<br"
 
-#: src/Wordpress/CustomPostType/Restriction.php:487
+#: src/Wordpress/CustomPostType/Restriction.php:485
 msgid "Send notification emails to users"
 msgstr "Benachrichtigungs-E-Mails an Nutzende senden"
 
-#: src/Wordpress/CustomPostType/Restriction.php:488
+#: src/Wordpress/CustomPostType/Restriction.php:486
 msgid "Important: Please save this restriction before clicking the send-button. Dependent of the status of the restriction, the appropriate notifications are sent to all affected users and location admins. You can configure the e-mail templates via Options -> Commonsbooking -> Tab Restrictions"
 msgstr "Wichtig: Bitte speicher diese Einschränkung, bevor du auf den Senden-Button klickst. Abhängig vom Status der Einschränkung werden die entsprechenden Benachrichtigungen an alle betroffenen Nutzenden und Standortadministratrierende gesendet. Du kannst die E-Mail-Vorlagen über Optionen -> Commonsbooking -> Tab-Einschränkungen konfigurieren"
 
-#: src/Wordpress/CustomPostType/Restriction.php:506
+#: src/Wordpress/CustomPostType/Restriction.php:504
 msgid "Total breakdown"
 msgstr "Totalausfall"
 
-#: src/Wordpress/CustomPostType/Restriction.php:507
+#: src/Wordpress/CustomPostType/Restriction.php:505
 msgid "Notice"
 msgstr "Hinweis"
 
-#: src/Wordpress/CustomPostType/Restriction.php:517
+#: src/Wordpress/CustomPostType/Restriction.php:515
 msgid "Not active"
 msgstr "Nicht aktiv"
 
-#: src/Wordpress/CustomPostType/Restriction.php:518
+#: src/Wordpress/CustomPostType/Restriction.php:516
 msgid "Active"
 msgstr "Aktiv"
 
-#: src/Wordpress/CustomPostType/Restriction.php:519
+#: src/Wordpress/CustomPostType/Restriction.php:517
 msgid "Problem solved"
 msgstr "Problem gelöst"
 
@@ -3434,7 +3428,7 @@ msgstr "Es ist nicht möglich, diesen Zeitrahmen im Frontend abzurufen. Bitte be
 msgid "Cancelled"
 msgstr "Storniert"
 
-#: src/Model/Timeframe.php:586
+#: src/Model/Timeframe.php:602
 msgid "The start- and end-time of the timeframe can not be the same. Please check the full-day checkbox if you want users to be able to book the full day."
 msgstr "Die Start- und Endzeit des Zeitrahmens dürfen nicht gleich sein. Wenn der gesamte Tag buchbar sein soll muss die Option \"Ganzer Tag\" angewählt sein."
 
@@ -3472,11 +3466,11 @@ msgstr "Storniert am"
 msgid "Admin booking by"
 msgstr "Adminbuchung von"
 
-#: src/Service/Upgrade.php:154
+#: src/Service/Upgrade.php:157
 msgid "New features and changes: Please backup your site before upgrading!"
 msgstr "Neue Funktionen und Änderungen: Bitte die Website vor dem Upgrade sichern!"
 
-#: src/Service/Upgrade.php:161
+#: src/Service/Upgrade.php:164
 msgid ""
 "\n"
 "\t\t\t\t\tThis CommonsBooking update has a lot of new features and changes on some templates.<br>\n"
@@ -3496,57 +3490,57 @@ msgstr "Globale Standorteinstellungen"
 msgid "These settings are used for all locations. You can overwrite these settings for each location in the location settings."
 msgstr "Diese Einstellungen werden für alle Standorte verwendet. Die Einstellungen können Sie für jeden Standort individuell in den Standorteinstellungen überschreiben werden."
 
-#: src/Wordpress/CustomPostType/Location.php:382
+#: src/Wordpress/CustomPostType/Location.php:391
 msgid "Use global location settings"
 msgstr "Globale Standorteinstellungen nutzen"
 
-#: src/Wordpress/CustomPostType/Location.php:383
+#: src/Wordpress/CustomPostType/Location.php:392
 msgid "If selected, the global location settings (under the \"General\" tab) will be used for this location. If not selected, the settings below will be used."
 msgstr "Wenn diese Option ausgewählt ist, werden die globalen Standorteinstellungen ( im Reiter \"Allgemein\") für diesen Standort verwendet. Wenn sie nicht ausgewählt ist, werden die Einstellungen unten verwendet."
 
-#: src/Wordpress/CustomPostType/Location.php:436
+#: src/Wordpress/CustomPostType/Location.php:445
 msgid "Count locked days when overbooking"
 msgstr "Gesperrte Tage bei Überbuchung zählen"
 
-#: src/Wordpress/CustomPostType/Location.php:442
+#: src/Wordpress/CustomPostType/Location.php:451
 msgid "Count connected locked days as one"
 msgstr "Zusammenhängende gesperrte Tage werden als Einheit gezählt"
 
-#: src/Wordpress/CustomPostType/Location.php:443
+#: src/Wordpress/CustomPostType/Location.php:452
 msgid "Here you can specify, if a connected span of locked days should be counted individually or just use up x amount of the maximum quota the user is allowed to book. If you set this field to 0, every day will be counted individually. If you set this field to 1, all overbooked days, no matter how many, will always count for 1 day. If you set this to 2, they will count a maximum of two days and so on."
 msgstr "Hier kann festgelegt werden, ob eine zusammenhängende Spanne von überbuchten Tagen einzeln gezählt werden soll oder ob nur x Tage des maximalen Kontingents, das der Benutzer buchen darf, verbraucht werden sollen. Wenn dieses Feld auf 0 gesetzt wird, wird jeder Tag einzeln gezählt. Wenn dieses Feld auf 1 gesetzt wird, werden alle überbuchten Tage, egal wie viele, immer nur als 1 Tag gezählt. Wenn dieses Feld auf 2 gesetzt wird, werden maximal zwei Tage gezählt und so weiter."
 
-#: src/Wordpress/CustomPostType/Location.php:437
+#: src/Wordpress/CustomPostType/Location.php:446
 msgid "If selected, days that are overbooked will be counted towards the maximum number of bookable days. If this option is disabled, locked days that are overbooked will allow for bookings that are longer than the maximum number of bookable days configured for the timeframe."
 msgstr "Ist diese Option aktiviert, werden überbuchte Tage auf die maximale Anzahl buchbarer Tage angerechnet. Wenn diese Option deaktiviert ist, dann werden überbuchte Tage nicht zusätzlich gezählt und ermöglichen Buchungszeiträume die länger sind als die im Zeitrahmen konfigurierte maximale Anzahl an gebuchten Tagen."
 
-#: src/Model/Timeframe.php:540
+#: src/Model/Timeframe.php:556
 msgid "No dates selected. Please select at least one date. Timeframe is saved as draft."
 msgstr "Keine Daten ausgewählt, bitte wähle mindestens ein Datum aus. Zeitrahmen wurde als Entwurf gespeichert."
 
-#: src/Model/Timeframe.php:548
+#: src/Model/Timeframe.php:564
 msgid "The same date was selected multiple times. Please select each date only once. Timeframe is saved as draft."
 msgstr "Das gleiche Datum wurde mehrfach ausgewählt. Bitte wählen Sie jedes Datum nur einmal aus. Zeitrahmen wurde als Entwurf gespeichert."
 
 #. translators: first %s = timeframe-ID, second %s is timeframe post_title
-#: src/Model/Timeframe.php:647
+#: src/Model/Timeframe.php:663
 msgid "See overlapping timeframe ID: %1$s %2$s"
 msgstr "Sich überschneidende Zeitrahmen ID: %1$s %2$s"
 
-#: src/Model/Timeframe.php:744
+#: src/Model/Timeframe.php:760
 msgid "Overlapping bookable timeframes are only allowed to have the same grid."
 msgstr "Sich überschneidende buchbare Zeiträume müssen das gleiche Raster haben."
 
-#: src/Model/Timeframe.php:774
+#: src/Model/Timeframe.php:790
 msgid "Overlapping bookable timeframes are not allowed to have the same weekdays."
 msgstr "Mehrere buchbare Zeiträume überschneiden sich in den definierten Wochentagen."
 
-#: src/Model/Timeframe.php:786
+#: src/Model/Timeframe.php:802
 msgid "Overlapping bookable timeframes are not allowed to have the same dates."
 msgstr "Mehrere buchbare Zeiträume überschneiden sich in dem definierten Datumsbereich."
 
-#: src/Model/Timeframe.php:793
-#: src/Model/Timeframe.php:800
+#: src/Model/Timeframe.php:809
+#: src/Model/Timeframe.php:816
 msgid "The other timeframe is overlapping with your weekly configuration."
 msgstr "Der andere Zeitrahmen überschneidet sich mit einer wöchentlichen Konfiguration."
 
@@ -3586,7 +3580,7 @@ msgstr "Feiertage importieren"
 msgid "Select the year and state to import holidays for (as of now only German holidays are supported)"
 msgstr "Wählen Sie das Jahr und das Bundesland, für das Sie Feiertage importieren möchten (derzeit werden Feiertage in Deutschland unterstützt)"
 
-#: src/Model/Timeframe.php:760
+#: src/Model/Timeframe.php:776
 msgid "Daily repeated time periods are not allowed to overlap."
 msgstr "Täglich wiederholende Zeiträume dürfen sich nicht überschneiden."
 
@@ -3807,11 +3801,11 @@ msgid "(not planned)"
 msgstr "(nichts geplant)"
 
 #: includes/OptionsArray.php:1218
-#: src/Service/Cache.php:345
+#: src/Service/Cache.php:353
 msgid "Clear Cache"
 msgstr "Cache leeren"
 
-#: src/Service/Cache.php:340
+#: src/Service/Cache.php:348
 msgid "Clear all cache items"
 msgstr "Alle Cache-Elemente löschen"
 
@@ -4093,3 +4087,15 @@ msgstr "Buchungsregeln: Kein Regeltyp festgelegt."
 #: src/Model/Booking.php:880
 #~ msgid "Confirmed"
 #~ msgstr "Bestätigt"
+
+#: src/Wordpress/CustomPostType/Location.php:328
+msgid "Email addresses of the owner of the station. Can be reminded about bookings / cancellations and will receive the booking codes (when configured in the timeframe). You can enter multiple addresses separated by commas."
+msgstr ""
+
+#: src/Wordpress/CustomPostType/Location.php:341
+msgid "Send copy of bookings / cancellations to location email"
+msgstr ""
+
+#: src/Wordpress/CustomPostType/Location.php:342
+msgid "If enabled, the location email will receive a copy of all booking and cancellation notifications."
+msgstr ""
