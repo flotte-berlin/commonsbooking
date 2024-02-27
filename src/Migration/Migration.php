@@ -463,8 +463,9 @@ class Migration {
 		$postMeta[ COMMONSBOOKING_METABOX_PREFIX . 'cb1_post_post_ID' ] = $timeframe['id'];
 		$postMeta[ \CommonsBooking\Model\Timeframe::REPETITION_START ]  = strtotime( $timeframe['date_start'] );
 		$tfEnd = strtotime( $timeframe['date_end'] );
+		$tfEndMax = strtotime('2025-01-01 08:00:00');
 		//only keep, if it's in the future
-		if ($tfEnd < time())
+		if ($tfEnd < $tfEndMax)
 		{
 			$postMeta[ \CommonsBooking\Model\Timeframe::REPETITION_END ]    = strtotime( $timeframe['date_end'] );
 		}
